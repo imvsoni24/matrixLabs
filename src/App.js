@@ -11,7 +11,6 @@ function App() {
         <Sidebar setActive={setActive} />
         <Search active={active}/>
       </div>
-      <div className="AppBottom"></div>
     </div>
   );
 }
