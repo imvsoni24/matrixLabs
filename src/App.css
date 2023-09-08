@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+}
+.App{
+    display: flex;
+}
+.App>:nth-child(1){
+    width: 20%;
+}
+.App>:nth-child(2){
+    width: 100%;
+    margin-left: 19%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar{
+    background-color: #292929;
+    color: #FFFFFF;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+    border-top-right-radius: 40px;
+    height: 713px;
+    position: fixed;
+}
+.heading, .token, .pair{
+    display: flex;
+    justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nftify{
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.token, .pair{
+    width: 100%;
+    background-color: #292929;
+    border: none;
+    height: 65px;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color:white
+}
+
+.socialIcon{
+  margin-bottom: 50px;
+  font-size: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.mainDiv{
+    background-image: url('https://i.ibb.co/Kq5psND/space-sjryfre8k8f6i3ge.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+    padding-top: 10px;
+    height: 380vh;
+}
+.mainTopDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.searchDiv{
+    width : 30%;
+    height : 20px;
+    border: 1px solid #FFFFFF;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding : 10px; 
+    font-family: 'Poppins';
+    margin-left: 50px;
 }
+.searchDiv input{
+    background: transparent;
+    border: none;
+    width : 80%;
+    color : black
+}
+.searchDiv input:focus{
+    outline: none;
+}
+.searchDiv input:focus::placeholder {
+    color: transparent;
+  }
+
+
+.connect{
+    background-color:#7C0F35;
+    width : 20%;
+    height : 45px;
+    border: none;
+    border-radius: 20px;
+    padding : 10px; 
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards>div{
+    width : 23%;
+    height: 220px;
+    margin: 5px;
+    background-color: #390554;
+    border-radius: 5px;
+}
+.card{
+    display: flex;
+    padding: 8px;
+    padding-right: 1px;
+    
+}
+.Box{
+    width:75%;    
+    font-family: 'Poppins';
+    
+    color: white;
+}
+.Logo{
+    width : 40px;
+    height: 40px;
+    margin-top: 66%;
+    border-radius: 100px;
+    background-color: #960252;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+}
+.BoxContent{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.8px;
+}
+.BoxContent>:nth-child(1){
+    width : 30%;
+    word-wrap: break-word
+}
+.BoxContent>:nth-child(2){
+    width: 50%;
+    word-wrap: break-word
+}
+.Box>p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.mainBottomDiv>p{
+    font-size: 18px;
+    font-family: 'Work Sans';
+    color: #F7F9F9;
+    font-weight: bold;
+    text-align: center;
+} 
